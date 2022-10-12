@@ -1,0 +1,38 @@
+// promotion
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .promotions {
+        padding: 60px 0;
+    }
+    .promotions .single-promotion .part-text h4.title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .promotions .single-promotion .part-text {
+        padding: 30px;
+    }
+    .promotions .view-more-btn .def-btn {
+        margin-right: 0;
+        height: 40px;
+        line-height: 40px;
+    }
+    .promotions .view-more-btn a.btc-text {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 991px) {
+    .promotions {
+        padding: 60px 0;
+    }
+    .promotions .single-promotion .part-text h4.title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .promotions .single-promotion .part-text {
+        padding: 30px;
+    }
+    .promotions .view-more-btn .def-btn {
+        height: 40px;
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,80 @@
+// recent activity
+.recent-activity {
+    padding: 120px 0 110px;
+    background: #242424;
+    .single-col {
+        h3.title {
+            color: #fff;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 16px;
+            letter-spacing: .5px;
+            text-transform: capitalize;
+            margin: -8px 0 25px
+        }
+        .activity-list {
+            .single-activity {
+                display: flex;
+                flex-direction: row;
+                background: #2a2a2a;
+                padding: 30px;
+                margin-bottom: 10px;
+                .part-img {
+                    width: 70px;
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    height: 70px;
+                    overflow: hidden;
+                }
+                .part-text {
+                    p {
+                        margin: 0;
+                        margin-top: -3px;
+                        color: #999;
+                        font-size: 15px;
+                        span.player-name {
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                        a.game-name {
+                            letter-spacing: 0.5px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #fff;
+                            color: #ababab;
+                        }
+                    }
+                    .winning-amount {
+                        display: block;
+                        font-size: 24px;
+                        font-weight: 600;
+                        font-family: $heading-font;
+                        @include text-gradient-1;
+                        margin-bottom: -5px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+            &.jackpot-triggers-win {
+                .winning-amount {
+                    margin-top: -7px!important;
+                    margin-bottom: 9px !important;
+                    font-size: 22px!important;
+                }
+            }
+            &.top-winner {
+                .single-activity {
+                    .part-img {
+                        background: #1b0a02;
+                        display: flex;
+                        height: 70px;
+                        padding: 4px;
+                        padding-bottom: 0;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}

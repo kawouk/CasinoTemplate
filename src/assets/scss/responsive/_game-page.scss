@@ -1,0 +1,36 @@
+// game page
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .games .all-games .title-cover .games-title {
+        font-size: 22px;
+    }
+    .games.game-page {
+        padding: 60px 0;
+    }
+    .games.game-page .games-filter-area {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .games .all-games .title-cover .games-title {
+        font-size: 22px;
+    }
+    .games.game-page {
+        padding: 60px 0;
+    }
+    .games.game-page .games-filter-area {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .games .all-games .title-cover .games-title {
+        font-size: 22px;
+    }
+    .games.game-page {
+        padding: 60px 0;
+    }
+    .games.game-page .games-filter-area {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,94 @@
+// breadcrumb
+.breadcrumb-miscoo {
+    background: url('../img/breadcrumb-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    .breadcrumb-img {
+        img {
+            position: absolute;
+            width: 500px;
+            top: -250px;
+            left: -250px;
+            opacity: .7;
+            &:nth-child(2) {
+                left: auto;
+                right: -250px;
+            }
+            &:nth-child(3) {
+                left: auto;
+                width: 260px;
+                right: -120px;
+                top: auto;
+                bottom: -120px;
+            }
+            &:nth-child(4) {
+                width: 260px;
+                left: -120px;
+                top: auto;
+                bottom: -120px;
+            }
+        }
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        opacity: .65;
+        z-index: -2;
+    }
+    .breadcrumb-content {
+        padding: 80px 0;
+        text-align: center;
+        h2.title {
+            font-size: 34px;
+            line-height: 44px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: -8px;
+            margin-bottom: 16px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #bbb;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+        ul {
+            margin-top: 32px;
+            li {
+                display: inline-block;
+                font-family: $heading-font;
+                // @include text-gradient-1;
+                color: rgba($white, 0.7);
+                padding: 10px 30px;
+                position: relative;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+                a {
+                    color: rgba($white, 0.7);
+                }
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #313131;
+                    z-index: -1;
+                }
+                &.arrow {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}

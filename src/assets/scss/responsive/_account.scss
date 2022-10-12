@@ -1,0 +1,169 @@
+// account
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .dashboard-menu .navbar-toggler {
+        padding: 0;
+        height: 45px;
+        width: 45px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: $gradient-1;
+        color: $white;
+        font-size: 25px;
+        border-radius: 0;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 12px 20px;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav {
+        margin-top: 20px;
+    }
+    .user-dashboard .dashboard-menu .navbar {
+        padding: 15px;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav .nav-item:last-child .nav-link {
+        margin-bottom: 0px;
+    }
+    .user-dashboard {
+        padding: 60px 0;
+    }
+    .user-dashboard .user-statics .single-statics {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .user-dashboard .user-benmathew {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .user-dashboard .transaction-chart {
+        padding: 20px;
+    }
+    .user-dashboard .transactions-table {
+        padding: 40px 20px 35px;
+        margin-top: 30px;
+    }
+    .misco-data-table.dataTable {
+        width: 1000px!important;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_info {
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_paginate {
+        padding-top: 5px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_paginate .paginate_button {
+        height: 35px;
+        line-height: 30px;
+        padding: 0 15px; 
+        margin: 5px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_length label select {
+        width: 50px;
+        height: 35px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_filter label input {
+        height: 35px;
+        width: 70%;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_filter label {
+        margin-bottom: 25px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_length label {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .misco-data-table.dataTable {
+        width: 850px!important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .dashboard-menu .navbar-toggler {
+        padding: 0;
+        height: 45px;
+        width: 45px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: $gradient-1;
+        color: $white;
+        font-size: 25px;
+        border-radius: 0;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 12px 20px;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav {
+        margin-top: 20px;
+    }
+    .user-dashboard .dashboard-menu .navbar {
+        padding: 15px;
+    }
+    .user-dashboard .dashboard-menu .navbar .navbar-nav .nav-item:last-child .nav-link {
+        margin-bottom: 0px;
+    }
+    .user-dashboard {
+        padding: 60px 0;
+    }
+    .user-dashboard .user-statics .single-statics {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .user-dashboard .user-benmathew {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .user-dashboard .transaction-chart {
+        padding: 20px;
+    }
+    .user-dashboard .transactions-table {
+        padding: 40px 20px 35px;
+        margin-top: 30px;
+    }
+    .misco-data-table.dataTable {
+        width: 1000px!important;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_info {
+        padding-top: 15px;
+        padding-left: 0;
+        float: none;
+        text-align: center;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_paginate {
+        padding-top: 15px;
+        float: none;
+        text-align: center;
+    }
+    // .user-dashboard .transactions-table .dataTables_wrapper .dataTables_paginate .paginate_button {
+    //     height: 35px;
+    //     line-height: 30px;
+    //     padding: 0 15px; 
+    //     margin: 5px;
+    // }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_length label select {
+        width: 50px;
+        height: 35px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_filter label input {
+        height: 35px;
+        width: 70%;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_filter label {
+        margin-bottom: 25px;
+    }
+    .user-dashboard .transactions-table .dataTables_wrapper .dataTables_length label {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .user-dashboard .dashboard-menu .navbar .navbar-nav .nav-item .nav-link {
+        padding: 15px 23px;
+    }
+}

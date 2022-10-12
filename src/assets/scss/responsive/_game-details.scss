@@ -1,0 +1,149 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .game-details {
+        padding: 60px 0;
+    }
+    .game-details .recent-activity .single-col {
+        margin-bottom: 0;
+    }
+    .game-details .part-prev {
+        height: auto;
+    }
+    .game-details .part-prev a.play-btn {
+        width: 180px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tabs-menu .nav-tabs .nav-item .nav-link {
+        margin: 5px 5px;
+        padding: 0 20px;
+    }
+    .game-details .game-descr .details-tab-pan {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .bet-control .btn-group button, .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling .btn-group button {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling {
+        margin-top: 10px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling .number {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play h3 {
+        font-size: 22px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play ul li {
+        line-height: 28px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane form .input-group {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    .game-details {
+        padding: 60px 0;
+    }
+    .game-details .recent-activity .single-col {
+        margin-bottom: 0;
+    }
+    .game-details .part-prev {
+        height: auto;
+    }
+    .game-details .part-prev a.play-btn {
+        width: 180px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tabs-menu .nav-tabs .nav-item .nav-link {
+        margin: 5px 5px;
+        padding: 0 20px;
+    }
+    .game-details .game-descr .details-tab-pan {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling .number {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play h3 {
+        font-size: 22px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play ul li {
+        line-height: 28px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane form .input-group {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .game-details {
+        padding: 60px 0;
+    }
+    .game-details .recent-activity .single-col {
+        margin-bottom: 0;
+    }
+    .game-details .part-prev {
+        height: auto;
+    }
+    .game-details .part-prev a.play-btn {
+        width: 180px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tabs-menu .nav-tabs .nav-item .nav-link {
+        margin: 5px 5px;
+        padding: 0 20px;
+    }
+    .game-details .game-descr .details-tab-pan {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .roll-controlling .number {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play h3 {
+        font-size: 22px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane .how-to-play ul li {
+        line-height: 28px;
+    }
+    .game-details .game-descr .details-tab-pan .tab-content .tab-pane form .input-group {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .game-details .game-descr .details-tab-pan {
+        margin-bottom: 30px;
+    }
+    .game-details {
+        padding: 60px 0 30px;
+    }
+    .game-details .recent-activity .single-col {
+        margin-bottom: 0;
+    }
+}

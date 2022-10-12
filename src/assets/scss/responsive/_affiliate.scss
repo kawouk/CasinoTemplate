@@ -1,0 +1,109 @@
+// affiliate
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .affiliate .part-affilate-feature .single-feature {
+        display: block;
+        padding: 0 15px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .affiliate .part-affilate-feature .single-feature .part-icon {
+        width: 60px;
+        margin-bottom: 25px;
+    }
+    .affiliate .part-affilate-feature {
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right: -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .affiliate {
+        padding: 60px 0;
+    }
+    .affiliate .part-para .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate {
+        margin: 0 25px;
+        &:last-child {
+            margin: 0 25px;
+        }
+    }
+    .affiliate .affiliate-how-to-do {
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .affiliate .affiliate-how-to-do h2.title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-icon .sr-num {
+        top: -9px;
+        right: -5px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-text p {
+        font-size: 18px;
+        line-height: 26px; 
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .affiliate {
+        padding: 60px 0;
+    }
+    .affiliate .part-para .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .affiliate .part-affilate-feature .single-feature {
+        display: block;
+        background: #2a2a2a;
+        padding: 30px;
+    }
+    .affiliate .part-affilate-feature .single-feature .part-icon {
+        width: 60px;
+        margin-bottom: 25px;
+    }
+    .affiliate .part-affilate-feature {
+        padding: 0;
+        background: transparent;
+        margin-top: 20px;
+    }
+    .affiliate .affiliate-how-to-do h2.title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-icon .sr-num {
+        top: -9px;
+        right: -5px;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate .part-text p {
+        font-size: 18px;
+        line-height: 26px; 
+        font-weight: 700;
+    }
+    .affiliate .affiliate-how-to-do .single-affiliate {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .affiliate .affiliate-how-to-do {
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}

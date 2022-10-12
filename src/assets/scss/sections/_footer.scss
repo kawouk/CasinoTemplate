@@ -1,0 +1,133 @@
+// footer 
+.footer {
+    .footer-top {
+        background: #111;
+        padding: 120px 0 115px;
+    }
+    .about-widget {
+        a.logo {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 32px;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            color: #ababab;
+            line-height: 28px;
+        }
+        .social-links {
+            margin-top: 32px;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        background: #242424;
+                        color: #ff4647;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        margin-right: 6px;
+                        &.active, &:hover {
+                            background: $gradient-1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .link-widget {
+        h4.title {
+            color: $white;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: -9px;
+            margin-bottom: 23px;
+            letter-spacing: 0;
+        }
+        ul {
+            li {
+                padding: 5px 0;
+                a {
+                    display: inline-block;
+                    color: #ababab;
+                    font-family: $body-font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    @include transition($transition);
+                    &:hover {
+                        color: #ff4647;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter-widget {
+        h4.title {
+            color: $white;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: -9px;
+            margin-bottom: 15px;
+            letter-spacing: 0;
+        }
+        .newsletter-form {
+            position: relative;
+            z-index: 2;
+            padding-bottom: 1px;
+            margin-bottom: 25px;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height:51px;
+                background: $gradient-1;
+                z-index: -1;
+                opacity: .5;
+            }
+            input {
+                background: #111;
+                border: none;
+                width: 100%;
+                padding: 0 90px 0 0;
+                height: 50px;
+                color: #999;
+            }
+            .def-btn {
+                border: none;
+                outline: none;
+                margin-top: 10px;
+                font-family: $heading-font;
+                letter-spacing: 1px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+        p {
+            color: #ababab;
+            line-height: 28px;
+        }
+    }
+    .copyright-area {
+        background: #242424;
+        text-align: center;
+        padding: 25px 0;
+        p {
+            color: #999;
+            margin-bottom: 0;
+            line-height: 28px;
+            a {
+                @include text-gradient-1;
+                font-family: $body-font;
+                letter-spacing: 0;
+            }
+        }
+    }
+}

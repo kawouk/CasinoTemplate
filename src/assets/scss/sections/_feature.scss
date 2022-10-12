@@ -1,0 +1,112 @@
+// feature
+.feature {
+    background: #242424;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 180px;
+    border-radius: 5px;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content: '';
+        background: $gradient-1;
+        left: -0px;
+        top: -0px;
+        right: -0px;
+        bottom: -0px;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        background: #242424;
+        left: -15px;
+        top: 0px;
+        right: -15px;
+        bottom: 0px;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.46);
+        border-radius: 5px;
+    }
+    .row {
+        .col-xl-3 {
+            &:last-child {
+                .single-feature {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .single-feature {
+        text-align: center;
+        position: relative;
+        padding: 40px 0;
+        &:after {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 50%;
+            height: 50px;
+            transform: translateY(-50%);
+            background: $white;
+            width: 1px;
+            opacity: .1;
+        }
+        .part-icon {
+            display: inline-block;
+            height: 90px;
+            margin-bottom: 23px;        
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+        h4.feature-title {
+            font-size: 24px;
+            line-height: 30px;
+            color: $white;    
+            margin-bottom: 26px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .def-btn {
+            color: #a5a5a5;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            position: relative;
+            text-transform: capitalize;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0px;
+                right: 1px;
+                top: 0px;
+                bottom: 1px;
+                background: #242424;
+                opacity: 1;
+                border-top: dashed orangered 1px;
+            }
+            &:hover {
+                color: $white;
+                &:after {
+                    opacity: 0;
+                }
+            }
+            svg {
+                width: 22px;
+                margin-left: 10px;
+                // display: none;
+            }
+        }
+    }
+}

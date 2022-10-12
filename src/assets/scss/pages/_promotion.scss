@@ -1,0 +1,80 @@
+// promotions
+.promotions {
+    padding: 120px 0;
+    background: #242424;
+    .single-promotion {
+        background: url('../img/breadcrumb-bg.jpg') center center no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            z-index: -1;
+            opacity: .9;
+        }
+        .part-text {
+            padding: 50px;
+            span.sub-title {
+                display: inline-block;
+                // color: #ff4b2b;
+                @include text-gradient-1;
+                text-transform: capitalize;
+                font-family: $heading-font;
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: 0.5px;
+                margin-top: -6px;
+                margin-bottom: 4px;
+            }
+            h4.title {
+                color: $white;
+                text-transform: capitalize;
+                letter-spacing: 0.5px;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 34px;
+                margin-bottom: 18px;
+            }
+            h5.title {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 38px;
+            }
+            p {
+                color: #999;
+                line-height: 28px;
+                margin-top: 14px;
+                margin-bottom: 12px;
+            }
+            .def-btn {
+                margin-top: 20px;
+            }
+        }
+        .part-img {
+            position: absolute;
+            right: -50px;
+            bottom: -100px;
+            width: 400px;
+        }
+    }
+    .view-more-btn {
+        text-align: center;
+        margin-top: 20px;
+        .def-btn {
+            margin-right: 20px;
+        }
+        a.btc-text {
+            color: #999;
+        }
+    }
+}

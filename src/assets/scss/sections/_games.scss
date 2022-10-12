@@ -1,0 +1,321 @@
+// games
+.games {
+    padding: 120px 0 90px;
+    background: #111;
+    &.game-page {
+        padding-bottom: 120px;
+        .all-games .single-game:hover .part-text:before {
+            transform: rotate(25deg) translateY(-15%) translateX(80%);
+        }
+        .all-games .single-game:hover .part-text:after {
+            transform: rotate(28deg) translateY(-16%) translateX(-28%);
+        }
+        .all-games .single-game .part-text:after {
+            width: 120%;
+        }
+        .games-filter-area {
+            padding: 0px;
+            .blog-search {
+                margin-bottom: 30px;
+                margin-top: 30px;
+                form {
+                    position: relative;
+                    input {
+                        background: transparent;
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                        height: 50px;
+                        width: 100%;
+                        padding: 0 30px;
+                        font-family: $heading-font;
+                        color: $white;
+                        font-size: 15px;
+                        background: #242424;
+                        letter-spacing: 0.5px;
+                        &::placeholder {
+                            text-transform: capitalize;
+                            font-weight: 400;
+                        }
+                    }
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 50px;
+                        width: 50px;
+                        background: $gradient-1;
+                        border: none;
+                        color: $white;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                }
+            }
+            .filtering {
+                &:last-child {
+                    .dropdown {
+                        button {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                .dropdown {
+                    button {
+                        background: #242424;
+                        border: none;
+                        color: $white;
+                        font-family: $heading-font;
+                        letter-spacing: 0.5px;
+                        font-weight: 400;
+                        outline: none;
+                        cursor: pointer;
+                        position: relative;
+                        // border: 1px solid rgba($white, 0.15);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                        height: 50px;
+                        width: 100%;
+                        text-align: left;
+                        font-size: 15px;
+                        padding-left: 30px;
+                        font-weight: 400;
+                        &:after {
+                            display: none;
+                        }
+                        &:before {
+                            width: 14px;
+                            height: 14px;
+                            background: $gradient-1;
+                            content: '';
+                            position: absolute;
+                            right: 30px;
+                            top: 50%;
+                            margin-top: -7px;
+                            clip-path: polygon(100% 28%, 100% 54%, 50% 100%, 0 55%, 0 26%, 50% 74%);
+                        }
+                    }
+                    .dropdown-menu {
+                        border-radius: 0;
+                        padding: 0;
+                        margin-top: 0;
+                        border: 0;
+                        margin-left: 2px;
+                        .dropdown-item {
+                            letter-spacing: 0.5px;
+                            padding: 10px 15px;
+                            border-bottom: 1px solid rgba(#111, 0.1);
+                            @include transition(0.0s);
+                            text-transform: capitalize;
+                            &:active {
+                                background: $gradient-1;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .miscoo-row {
+            margin: 0;
+            margin: -5px;
+            div[class*='col'] {
+                padding: 5px;
+            }
+        }
+        .all-games {
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .all-games .single-game {
+            margin-bottom: 0px;
+        }
+    }
+    .game-menu {
+        .nav {
+            .nav-item {
+                .nav-link {
+                    background: #242424;
+                    color: $white;
+                    border-bottom: 1px solid rgba($white, 0.05);
+                    padding: 20px 30px;
+                    line-height: 100%;
+                    align-items: center;
+                    display: flex;
+                    position: relative;
+                    @include transition($transition);
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 0;
+                        width: 0px;
+                        height: 100%;
+                        background: $gradient-1;
+                        @include transition($transition);
+                    }
+                    &.active{
+                        padding-left: 35px;
+                        &:after {
+                            width: 5px;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        &.icon {
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                path {
+                                    fill: #ff4647;
+                                }
+                            }
+                            margin-right: 15px;
+                            img {
+                                width: 20px;
+                            }
+                        }
+                        &.text {
+
+                        }
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    .all-games {
+        position: relative;
+        @include transition($transition);
+        opacity: 0;
+        transform: scale(0.99);
+        &.anim-change {
+            opacity: 1;
+            transform: scale(1.0);
+        }
+        .title-cover {
+            overflow: hidden;
+            .games-title {
+                // @include text-gradient-1;
+                font-size: 28px;
+                font-weight: 500;
+                display: inline-block;
+                position: relative;
+                z-index: 2;    
+                color: rgb(255 255 255 / 0.8);
+                margin: -4px 0 26px;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: calc(100% + 30px);
+                    top: 50%;
+                    width: 999px;
+                    height: 1px;
+                    background: $gradient-1;
+                    opacity: .3;
+                }
+                .icon {
+                    color: #ff464b;
+                    position: relative;
+                    top: -3px;
+                    svg {
+                        height: 25px;
+                        width: 40px;
+                    }
+                }
+            }
+            position: relative;
+        }
+        .single-game {
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgb(255 70 77 / 0.1);
+            @include transition($transition);
+            .part-img {
+                img {
+                    width: 100%;
+                    opacity: .8;
+                }
+                .icon-img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 110px;
+                    transform: translateY(-50%) translateX(-50%);
+                    filter: drop-shadow(7px 7px 9px #000);
+                    opacity: 1;
+                    display: none;
+                }
+            }
+            .part-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                padding-left: 30px;
+                padding-top: 30px;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 150%;
+                    background: #242424;
+                    z-index: -1;
+                    transform: rotate(28deg) translateY(-20%) translateX(-130%);
+                    @include transition($transition);
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    top: 0;
+                    width: 80%;
+                    height: 150%;
+                    background: $gradient-1;
+                    z-index: -1;
+                    transform: rotate(25deg) translateY(-15%) translateX(120%);
+                    @include transition($transition);
+                }
+                h4.game-title {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $white;
+                    margin-top: -7px;
+                    margin-bottom: 25px;
+                    position: relative;
+                    left: -100%;
+                    @include transition($transition);
+                    transition-delay: .2s;
+                }
+                a {
+                    position: relative;
+                    left: -100%;
+                    @include transition($transition);
+                    transition-delay: .4s;
+                }
+            }
+            &:hover {
+                border-color: transparent;
+                .part-text {
+                    h4.game-title, a {
+                        left: 0;
+                    }
+                    &:after {
+                        transform: rotate(28deg) translateY(-20%) translateX(-40%);
+                    }
+                    &:before {
+                        transform: rotate(25deg) translateY(-15%) translateX(30%);
+                    }
+                }
+            }
+        }
+    }
+}

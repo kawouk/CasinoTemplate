@@ -1,0 +1,148 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    // about us
+    .about-us .part-text h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: -8px;
+    }
+    .about-us .part-text h2 br {
+        display: none;
+    }
+    .about-us .part-statics .single-statics {
+        background: #2a2a2a;
+        margin: 0 0 10px;
+        padding: 30px;
+    }
+    .about-us .part-img {
+        margin-top: 30px;
+    }
+    .about-us {
+        padding: 60px 0;
+    }
+
+    // team
+    .team {
+        padding: 60px 0 30px;
+    }
+    .team .single-member {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+    // about us
+    .about-us .part-text h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: -8px;
+    }
+    .about-us .part-text h2 br {
+        display: none;
+    }
+    .about-us .part-img {
+        margin-top: 30px;
+    }
+    .about-us {
+        padding: 60px 0;
+    }
+    
+    .about-us .part-statics  {
+        .row {
+            flex-wrap: nowrap;
+            [class*="col"] {
+                .single-statics {
+                    display: block;
+                    background: #2a2a2a;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+    .about-us .part-statics .single-statics .part-icon {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    // team
+    .team {
+        padding: 60px 0 30px;
+        .row {
+            [class*="team"] {
+                width: 50%;
+            }
+        }
+    }
+    .team .single-member {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    // about us
+    .about-us .part-text h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: -8px;
+    }
+    .about-us .part-text h2 br {
+        display: none;
+    }
+    .about-us .part-img {
+        margin-top: 30px;
+    }
+    .about-us {
+        padding: 60px 0;
+    }
+
+    .about-us .part-statics  {
+        .single-statics {
+            display: block;
+            background: #2a2a2a;
+            padding: 15px;
+        }
+    }
+    .about-us .part-statics .single-statics .part-icon {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    // team
+    .team {
+        padding: 60px 0 30px;
+    }
+    .team .single-member {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    // about us
+    .about-us .part-text h2 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: -8px;
+    }
+    .about-us .part-img {
+        margin-top: 40px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .about-us {
+        padding: 60px 0;
+    }
+
+    .about-us .part-statics  {
+        .single-statics {
+            background: #2a2a2a;
+            padding: 30px;
+        }
+    }
+
+    // team
+    .team {
+        padding: 60px 0 30px;
+    }
+    .team .single-member {
+        margin-bottom: 30px;
+    }
+}

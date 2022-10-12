@@ -1,0 +1,29 @@
+// payment-gateway
+.payment-gateway {
+    padding: 120px 0;
+    background: #242424;
+    .part-text {
+        h2.title {
+            font-size: 40px;
+            line-height: 50px;
+            color: #fff;
+            margin-top: -10px;
+            margin-bottom: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #999;
+            line-height: 28px;
+        }
+        a {
+            margin-top: 16px;
+        }
+    }
+    .all-gateways {
+        img {
+            filter: grayscale(1);
+            opacity: .6;
+        }
+    }
+}

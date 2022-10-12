@@ -1,0 +1,171 @@
+// affiliate
+.affiliate {
+    padding: 120px 0 97px;
+    background: #242424;
+    .part-para {
+        .sub-title {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: $heading-font;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            @include text-gradient-1;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 40px;
+            line-height: 50px;
+            color: $white;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            text-transform: capitalize;
+        }
+        p {
+            color: #999;
+            line-height: 28px;
+        }
+        a.sign-up-btn {
+            margin-top: 16px;
+        }
+        .text-img {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    }
+    .part-affilate-feature {
+        background: #2a2a2a;
+        padding: 50px;
+        .single-feature {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .part-icon {
+                width: 80px;
+                margin-right: 30px;
+                img {
+                    width: 100%;
+                }
+            }
+            .part-text {
+                h3.title {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    color: $white;
+                    margin-bottom: 18px;
+                    letter-spacing: 0.5px;
+                }
+                p {
+                    color: #999;
+                    line-height: 28px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .affiliate-how-to-do {
+        background: #2a2a2a;
+        padding: 60px 0;
+        text-align: center;
+        padding-bottom: 38px;
+        margin-top: 35px;
+        margin-bottom: 60px;
+        h2.title {
+            font-size: 40px;
+            line-height: 50px;
+            color: $white;
+            margin-bottom: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+            margin-top: -10px;
+        }
+        .single-affiliate {
+            display: inline-block;
+            margin-right: 60px;
+            text-align: center;
+            &:last-child {
+                margin-right: 0;
+            }
+            display: inline-block;
+            &:nth-child(2) {
+                .part-icon {
+                    border-color: #ffb72d;
+                    .sr-num {
+                        border-color: #ffb72d;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .part-icon {
+                    border-color: #19c5f0;
+                    .sr-num {
+                        border-color: #19c5f0;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .part-icon {
+                    border-color: #d23513;
+                    .sr-num {
+                        border-color: #d23513;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                .part-icon {
+                    border-color: #78f043;
+                    .sr-num {
+                        border-color: #78f043;
+                    }
+                }
+            }
+            .part-icon {
+                width: 100px;
+                height: 100px;
+                border: 2px solid red;
+                display: inline-block;
+                border-radius: 50%;
+                line-height: 100px;
+                text-align: center;
+                margin-bottom: 26px;
+                position: relative;
+                .sr-num {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    text-align: center;
+                    line-height: 26px;
+                    position: absolute;
+                    top: 3px;
+                    right: 3px;
+                    background: #2a2a2a;
+                    color: $white;
+                    font-weight: 500;
+                }
+                img {
+                    width: 40px;
+                }
+            }
+            .part-text {
+                p {
+                    color: #999;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

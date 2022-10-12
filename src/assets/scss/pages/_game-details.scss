@@ -1,0 +1,245 @@
+// game details
+.game-details {
+    padding: 120px 0;
+    background: #242424;
+    .part-prev {
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            left: 15px;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 1px dotted rgb(255 255 255 / 0.6);
+        }
+        a.play-btn {
+            background: $white;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 5;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 30px;
+        }
+    }
+    .game-descr {
+        .details-tabs-menu {
+            margin-top: 50px;
+            .nav-tabs {
+                border-bottom: none;
+                justify-content: center;
+                .nav-item {
+                    .nav-link {
+                        padding: 0 30px;
+                        height: 50px;
+                        line-height: 50px;
+                        margin: 0 10px;
+                        background: transparent;
+                        border-radius: 0;
+                        border: none;
+                        color: $white;
+                        letter-spacing: 0.5px;
+                        font-size: 18px;
+                        background: #2a2a2a;
+                        border: 1px solid rgb(255 72 66 / 0.2);
+                        position: relative;
+                        z-index: 2;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: $gradient-1;
+                            z-index: -1;
+                            opacity: 0;
+                            @include transition($transition);
+                        }
+                        &.active {
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .details-tab-pan {
+            background: #2a2a2a;
+            padding: 50px;
+            margin-top: 50px;
+            .tab-content {
+                .tab-pane {
+                    h3 {
+                        font-size: 30px;
+                        color: $white;
+                        letter-spacing: 0.5px;
+                        margin-top: -8px;
+                        margin-bottom: 28px;
+                        text-transform: capitalize;
+                    }
+                    form {
+                        label {
+                            font-family: $heading-font;
+                            color: rgba(255, 255, 255, 0.8);
+                            letter-spacing: 0.5px;
+                            font-size: 16px;
+                            margin-top: -5px;
+                            margin-bottom: 10px;
+                            display: block;
+                        }
+                        .input-group {
+                            margin-bottom: 30px;
+                            input {
+                                color: rgba(255, 255, 255, 0.8);
+                                background: transparent;
+                                border-radius: 0;
+                                font-size: 15px; 
+                                padding: 0 30px;
+                                height: 42px;
+                                border: 1px solid rgba(153, 153, 153, 0.26);
+                                border-right: 0;
+                                &::placeholder {
+                                    color: rgba(255, 255, 255, 0.8);
+                                }
+                            }
+                            .input-group-append {
+                                .input-group-text {
+                                    border-radius: 0;
+                                    font-size: 15px;
+                                    background: rgba(153, 153, 153, 0.26);
+                                    color: $white;
+                                    border: none;
+                                    padding: 0 30px;
+                                }
+                            }
+                        }
+                    }
+                    .bet-control, .roll-controlling {
+                        .btn-group {
+                            background: $gradient-1;
+                            button {
+                                background: transparent;
+                                border: none;
+                                padding: 0;
+                                height: 40px;
+                                padding: 0 20px;
+                                border-right: 1px solid rgba($white, 0.3);
+                                font-family: $heading-font;
+                                letter-spacing: 0.5px;
+                                font-size: 18px;
+                                border-radius: 0;
+                                svg {
+                                    width: auto;
+                                    height: 28px;
+                                    position: relative;
+                                    top: -2px;
+                                    margin-left: 5px;
+                                }
+                                &.under {
+                                    svg {
+                                        transform: rotate(180deg);
+                                        margin-left: 0;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                &:active, &:focus {
+                                    box-shadow: 0 0 0 0.2rem rgba(190, 190, 190, 0.4);
+                                }
+                                &:last-child {
+                                    border-right: 0;
+                                }
+                                &.active {
+                                    box-shadow: 0 0 0 0.2rem rgba(190, 190, 190, 0.4);
+                                }
+                            }
+                        }
+                    }
+                    .roll-controlling {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .number {
+                            color: rgba($white, 0.8);
+                            font-size: 20px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .place-bet-btn {
+                        font-family: $heading-font;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        margin-top: 30px;
+                    }
+                    .provably-fair {
+                        li {
+                            .input-group {
+                                margin-bottom: 30px;
+                                input {
+                                    color: rgba(255, 255, 255, 0.8);
+                                    background: transparent;
+                                    border-radius: 0;
+                                    font-size: 15px; 
+                                    padding: 0 30px;
+                                    height: 42px;
+                                    border: 1px solid rgba(153, 153, 153, 0.26);
+                                    border-left: 0;
+                                    &::placeholder {
+                                        color: rgba(255, 255, 255, 0.8);
+                                    }
+                                }
+                                .input-group-append {
+                                    .input-group-text {
+                                        border-radius: 0;
+                                        font-size: 15px;
+                                        background: rgba(153, 153, 153, 0.26);
+                                        color: $white;
+                                        border: none;
+                                        padding: 0 30px;
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                .input-group {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .how-to-play {
+                        h3 {
+                            font-size: 30px;
+                            color: $white;
+                            letter-spacing: 0.5px;
+                            margin-top: -8px;
+                            margin-bottom: 18px;
+                        }
+                        p {
+                            color: #999;
+                            line-height: 28px;
+                        }
+                        ul {
+                            li {
+                                color: $white;
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

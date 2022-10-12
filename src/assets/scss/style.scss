@@ -1,0 +1,89 @@
+/* =================================
+ Temlate Name : Miscoo
+ Author Name : autworks
+ Date: 08/10/2020
+ Version: 1.0
+ =================================
+
+/* =================================
+ css index
+ =================================
+ *. typography
+ *. section title
+ *. preloader
+ *. scroll to top button
+ *. normalize
+ 1. header
+ 2. Breadcrump
+ 3. banner
+ 4. limelight feature
+ 5. About
+ 6. Service
+ 7. Portfolio
+ 8. Call to action
+ 9. Testimonial
+ 10. Team
+ 11. News
+ 12. Brand
+ 13. Contact
+ 14. Footer & copyright
+ 15. About second part
+ 16. Service page
+ 17. Service Details
+ 18. Sidebar
+ 19. Blog
+ 20. Contact
+ 21. Appointment
+
+================================= */
+
+
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+@import "main/_animation";
+//=Section scss
+
+@import "sections/_header";
+@import "sections/_banner";
+@import "sections/_about";
+@import "sections/_feature";
+@import "sections/_iq-feature";
+@import "sections/_games";
+@import "sections/_cta";
+@import "sections/_recent-activity";
+@import "sections/_summery";
+@import "sections/_section-title";
+@import "sections/_partners";
+@import "sections/_lottery-news";
+@import "sections/_payment-gateway";
+@import "sections/_testimonial";
+@import "sections/_contact";
+@import "sections/_footer";
+
+//=Pages scss
+@import "pages/_breadcrumb";
+@import "pages/_blog-details";
+@import "pages/_about";
+@import "pages/_team";
+@import "pages/_promotion";
+@import "pages/_contest";
+@import "pages/_register";
+@import "pages/_affiliate";
+@import "pages/_game-details";
+@import "pages/_faq";
+@import "pages/_account";
+
+//=Responsive scss
+@import "responsive/_breadcrumb";
+@import "responsive/_blog";
+@import "responsive/_about-us";
+@import "responsive/_game-page";
+@import "responsive/_contest";
+@import "responsive/_promotion";
+@import "responsive/_affiliate";
+@import "responsive/_register";
+@import "responsive/_game-details";
+@import "responsive/_faq";
+@import "responsive/_account";

@@ -1,0 +1,192 @@
+// lottery news
+.news {
+    padding: 120px 0 80px;
+    background: #111;
+    overflow: hidden;
+    .news-container {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            height: 9999px;
+            width: 999px;
+            left: calc( 100% - 150px );
+            background-image: $gradient-1;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            height: 9999px;
+            width: 999px;
+            left: calc( 100% - 150px );
+            background: url('../img/bg.png') center center repeat;
+            z-index: 1;
+            background-size: 100%;
+            opacity: .3;
+        }
+    }
+    &.blog-page {
+        background: #242424;
+        padding-bottom: 120px;
+        overflow: visible;
+        .single-news {
+            .part-text {
+                background: #313131;
+                p {
+                    color: #ababab;
+                }
+            }
+        }
+    }
+    .single-news {
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
+        .part-img {
+            img {
+                width: 100%;
+            }
+        }
+        .part-text {
+            padding: 40px;
+            padding-top: 31px;
+            background: #242424;
+            h3.title {
+                font-size: 24px;
+                font-weight: 700;
+                color: $white;
+                line-height: 34px;
+                margin-bottom: 16px;
+                letter-spacing: 0.5px;
+            }
+            p {
+                color: #999;
+                line-height: 28px;
+            }
+            a {
+                margin-top: 16px;
+            }
+        }
+    }
+    .blog-filter-area {
+        background: #313131;
+        margin-bottom: 50px;
+        padding: 30px;
+        .blog-search {
+            form {
+                position: relative;
+                input {
+                    background: transparent;
+                    border: 1px solid rgba($white, 0.15);
+                    height: 50px;
+                    width: 100%;
+                    padding: 0 30px;
+                    font-family: $heading-font;
+                    color: $white;
+                    font-size: 15px;
+                    background: #242424;
+                    letter-spacing: 0.5px;
+                    &::placeholder {
+                        text-transform: capitalize;
+                        font-weight: 400;
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 50px;
+                    width: 50px;
+                    background: $gradient-1;
+                    border: none;
+                    color: $white;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+        }
+        .filtering {
+            .dropdown {
+                button {
+                    background: #242424;
+                    border: none;
+                    color: $white;
+                    font-family: $heading-font;
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    outline: none;
+                    cursor: pointer;
+                    position: relative;
+                    border: 1px solid rgba($white, 0.15);
+                    height: 50px;
+                    width: 100%;
+                    text-align: left;
+                    font-size: 15px;
+                    padding-left: 30px;
+                    font-weight: 400;
+                    &:after {
+                        display: none;
+                    }
+                    &:before {
+                        width: 14px;
+                        height: 14px;
+                        background: $gradient-1;
+                        content: '';
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        margin-top: -7px;
+                        clip-path: polygon(100% 28%, 100% 54%, 50% 100%, 0 55%, 0 26%, 50% 74%);
+                    }
+                }
+                .dropdown-menu {
+                    border-radius: 0;
+                    padding: 0;
+                    margin-top: 0;
+                    border: 0;
+                    margin-left: 2px;
+                    .dropdown-item {
+                        letter-spacing: 0.5px;
+                        padding: 10px 15px;
+                        border-bottom: 1px solid rgba(#111, 0.1);
+                        @include transition(0.0s);
+                        text-transform: capitalize;
+                        &:active {
+                            background: $gradient-1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .misco-pagination {
+        margin-top: 30px;
+        ul {
+            li {
+                a {
+                    width: 50px;
+                    height: 50px;
+                    background: #313131;
+                    color: $white;
+                    line-height: 50px;
+                    text-align: center;
+                    margin-right: 6px;
+                    &.active {
+                        background: $gradient-1;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                    &:hover {
+                        color: #ff4b2b;
+                    }
+                }
+            }
+        }
+    }
+}

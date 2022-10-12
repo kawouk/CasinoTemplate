@@ -1,0 +1,23 @@
+// section title
+.section-title {
+    margin-bottom: 62px;
+    text-align: center;
+    &.style-2 {
+        p {
+            color: #ababab;
+        }
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #fff;
+        margin-top: -10px;
+        margin-bottom: 28px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    p {
+        color: #999;
+        line-height: 28px;
+    }
+}

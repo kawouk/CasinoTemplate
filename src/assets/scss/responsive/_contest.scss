@@ -1,0 +1,281 @@
+// contest
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contest-section .contest-date-text:after, .contest-section .single-contest:first-child .part-right .contest-date-text h4 span.clndr-icon:after, .contest-section .contest-date-text:before, .contest-section .contest-date-text h4 span.clndr-icon:after {
+        display: none;
+    }
+    .contest-section .contest-date-text p {
+        padding-left: 0;
+    }
+    .contest-section .contest-date-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contest-section .contest-date-text a.def-btn {
+        margin-left: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text p {
+        padding-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text a.def-btn {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contest-section {
+        padding: 60px 0;
+    }
+    .contest-section .single-contest {
+        margin-bottom: 30px;
+    }
+    .contest-section .contest-head .choose-game ul {
+        margin: 0 -5px;
+    }
+    .contest-section .contest-head .choose-game ul li {
+        margin: 0 5px;
+    }
+    .contest-section .contest-head .choose-game ul li p.game-name {
+        z-index: 5;
+    }
+    .contest-section .single-contest:nth-child(even) .part-left {
+        order: 0;
+    }
+
+    .contest-section .contest-date-text h4 span.clndr-icon {
+        display: none;
+    }
+    .contest-section .contest-date-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contest-section .contest-date-text p {
+        padding-left: 0;
+    }
+    .contest-section .contest-date-text a.def-btn {
+        margin-left: 0;
+    }
+    .contest-section .contest-date-text {
+        padding: 30px;
+        background: #242424;
+        // margin-top: 10px;
+        border-top: 1px solid rgba($white, 0.2);
+    }
+    .contest-section .single-contest:nth-child(even) .part-right {
+        text-align: left;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text p {
+        padding-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text a.def-btn {
+        margin-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text {
+        align-items: flex-start;
+    }
+    .contest-section .contest-date-text:before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .contest-section {
+        padding: 60px 0;
+    }
+    .contest-section .single-contest {
+        margin-bottom: 30px;
+    }
+    .contest-section .contest-head .choose-game ul {
+        display: inline-table;
+        margin: -4px;
+    }
+    .contest-section .contest-head .choose-game ul li {
+        width: calc(20% - 8px);
+        display: inline-block;
+        margin: 4px 4px;
+    }
+    .contest-section .contest-head .choose-game ul li p.game-name {
+        z-index: 5;
+    }
+    .contest-section .contest-head .control-contest {
+        padding: 0;
+        border: none;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .contest-section .contest-head .control-contest .weeki-filter ul{
+        display: block;
+    }
+    .contest-section .contest-head .control-contest .weeki-filter ul li a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs {
+        flex-wrap: nowrap;
+        margin-bottom: 10px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item .nav-link {
+        margin-right: 10px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item:last-child .nav-link {
+        margin-right: 0;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item {
+        flex: 1;
+    }
+    .contest-section .single-contest:nth-child(even) .part-left {
+        order: 0;
+    }
+
+    .contest-section .contest-date-text h4 span.clndr-icon {
+        display: none;
+    }
+    .contest-section .contest-date-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contest-section .contest-date-text p {
+        padding-left: 0;
+    }
+    .contest-section .contest-date-text a.def-btn {
+        margin-left: 0;
+    }
+    .contest-section .contest-date-text {
+        padding: 30px;
+        background: #242424;
+        // margin-top: 10px;
+        border-top: 1px solid rgba($white, 0.2);
+    }
+    .contest-section .single-contest:nth-child(even) .part-right {
+        text-align: left;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text p {
+        padding-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text a.def-btn {
+        margin-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text {
+        align-items: flex-start;
+    }
+    .contest-section .contest-date-text:before {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .contest-section {
+        padding: 60px 0;
+    }
+    .contest-section .single-contest {
+        margin-bottom: 30px;
+    }
+    .contest-section .contest-head .choose-game ul {
+        display: inline-table;
+        margin: -4px;
+    }
+    .contest-section .contest-head .choose-game ul li {
+        width: calc(25% - 8px);
+        display: inline-block;
+        margin: 4px 4px;
+    }
+    .contest-section .contest-head .choose-game ul li p.game-name {
+        z-index: 5;
+    }
+    .contest-section .contest-head .control-contest {
+        padding: 0;
+        border: none;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .contest-section .contest-head .control-contest .weeki-filter ul{
+        display: block;
+    }
+    .contest-section .contest-head .control-contest .weeki-filter ul li a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs {
+        flex-wrap: nowrap;
+        margin-bottom: 10px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item .nav-link {
+        margin-right: 10px;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item:last-child .nav-link {
+        margin-right: 0;
+    }
+    .contest-section .contest-head .control-contest .in-play-and-ended-filter .nav-tabs .nav-item {
+        flex: 1;
+    }
+    .contest-section .single-contest:nth-child(even) .part-left {
+        order: 0;
+    }
+
+    // contest box
+    .contest-section .single-contest .contest-box .part-text a.title {
+        font-size: 22px;
+        line-height: 32px;
+        padding: 0 30px;
+    }
+    .contest-section .single-contest .contest-box .part-text .part-timer .single-time span.title {
+        display: none;
+    }
+    .contest-section .single-contest .contest-box .part-text .part-timer .single-time {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .contest-section .single-contest .contest-box .part-text .part-timer .single-time span.number {
+        padding: 0;
+        font-size: 24px;
+    }
+    .contest-section .single-contest .contest-box .part-text .part-info ul {
+        display: block;
+        text-align: center;
+    }
+    .contest-section .single-contest .contest-box .part-text .part-info ul li {
+        margin: 0 5px 20px;
+        width: calc(100% / 2 - 20px);
+        display: inline-block;
+    }
+    .contest-section .single-contest .contest-box {
+        padding: 30px 0;
+        padding-bottom: 10px;
+    }
+    .contest-section .contest-date-text h4 span.clndr-icon {
+        display: none;
+    }
+    .contest-section .contest-date-text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contest-section .contest-date-text p {
+        padding-left: 0;
+    }
+    .contest-section .contest-date-text a.def-btn {
+        margin-left: 0;
+    }
+    .contest-section .contest-date-text {
+        padding: 30px;
+        background: #242424;
+        // margin-top: 10px;
+        border-top: 1px solid rgba($white, 0.2);
+    }
+    .contest-section .single-contest:nth-child(even) .part-right {
+        text-align: left;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text p {
+        padding-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text a.def-btn {
+        margin-right: 0;
+    }
+    .contest-section .single-contest:nth-child(even) .part-right .contest-date-text {
+        align-items: flex-start;
+    }
+    .contest-section .contest-date-text:before {
+        display: none;
+    }
+}
